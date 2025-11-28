@@ -18,7 +18,7 @@ class _CalcPageState extends State<CalcPage> {
     final limite_d = double.tryParse(limite) ?? 0.0;
     final diff = peso_d - limite_d;
 
-    if (diff >= 0){
+    if (diff <= 0){
       setState(() {
         resultText = 'Aprobado: Peso dentro del límite';
       });
@@ -47,16 +47,6 @@ class _CalcPageState extends State<CalcPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Expanded(
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(12),
-                  child: Image.asset(
-                    'assets/images/avion.jpg',
-                    fit: BoxFit.cover,
-                    width: 16,
-                  ),
-                ),
-              ),
               const Text(
                 'Calculadora de equipaje',
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),

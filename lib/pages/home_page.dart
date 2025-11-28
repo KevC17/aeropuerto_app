@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
             ElevatedButton(
               onPressed: () => context.go('/calc-equip'),
               child: const Text('Calculadora de Equipaje'),
-            ),/*
+            ),
             const SizedBox(height: 12),
 
             ElevatedButton(
@@ -34,7 +34,7 @@ class HomePage extends StatelessWidget {
             ElevatedButton(
               onPressed: () => context.go('/prio'),
               child: const Text('Prioridad de embarque'),
-            ),
+            ),/*
             const SizedBox(height: 12),
 
             ElevatedButton(
